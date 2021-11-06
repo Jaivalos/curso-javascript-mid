@@ -1,23 +1,22 @@
 
 //Objeto window
 
-//El objeto window es utilizado para controlar completamente toda la ventana de nuestra pagina web
+//screen
+// const screen = window.screen;
+// document.write(`Screen: ${screen}<br>
+// Height screen: ${screen.height}<br>
+// Width screen: ${screen.width}<br>
+// Screen orientation: ${screen.orientation.angle}<br>`);
 
-//open
-let youTubeUrl = "https://youtube.com";
-let ventana = window.open(youTubeUrl);
+//left and top
+// const screenLeft = window.screenLeft;
+// const screenTop = window.screenTop;
 
-//close
-ventana.close();
+// document.write(`Left: ${screenLeft}<br>
+// Top: ${screenTop}`)
 
-//closed
-document.write(`Estado de la ventana: ${ventana.closed}`);
+//Scrol x,y
+const sX= window.scrollX;
+const sY = window.scrollY;
 
-//El window.stop() nos funciona para parar la carga de la pagina 
-
-//print
-window.print();
-
-//confirm
-let resp = confirm("Estas seguro que quieres salir del sitio web?");
-document.write(`<br>Valor del confirm: ${resp}`);
+console.log(sY + " " + sX);
